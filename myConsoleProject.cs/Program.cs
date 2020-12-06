@@ -53,24 +53,36 @@ namespace myConsoleProject.cs
             //Console.Read();
 
 
-            Console.WriteLine("Anonymous Income Comparison Program");
-            Console.WriteLine("Person 1\nHourly Rate?");
-            double rate1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Hours worked per week?");
-            double hours1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Person 2\nHourly Rate?");
-            double rate2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Hours worked per week?");
-            double hours2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Annual salary of Person 1:");
-            double result1 = rate1 * hours1 * 52;
-            Console.WriteLine(result1);
-            Console.WriteLine("Annual salary of Person 2:");
-            double result2 = rate2 * hours2 * 52;
-            Console.WriteLine(result2);
-            Console.WriteLine("Does Person 1 make more money than Person 2?");
-            bool compare = result1 > result2;
-            Console.WriteLine(compare);
+            //Console.WriteLine("Anonymous Income Comparison Program");
+            //Console.WriteLine("Person 1\nHourly Rate?");
+            //double rate1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Hours worked per week?");
+            //double hours1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Person 2\nHourly Rate?");
+            //double rate2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Hours worked per week?");
+            //double hours2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Annual salary of Person 1:");
+            //double result1 = rate1 * hours1 * 52;
+            //Console.WriteLine(result1);
+            //Console.WriteLine("Annual salary of Person 2:");
+            //double result2 = rate2 * hours2 * 52;
+            //Console.WriteLine(result2);
+            //Console.WriteLine("Does Person 1 make more money than Person 2?");
+            //bool compare = result1 > result2;
+            //Console.WriteLine(compare);
+            //Console.Read();
+
+
+            Console.WriteLine("What is your age?");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Have you ever had a DUI?");
+            bool DUI = Convert.ToBoolean(Console.ReadLine());
+            Console.WriteLine("How many speeding tickets do you have?");
+            int tickets = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Qualified?");
+            bool qualified = age > 15 && DUI == false && tickets <= 3;
+            Console.WriteLine(qualified);
             Console.Read();
         }
     }
