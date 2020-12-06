@@ -29,26 +29,48 @@ namespace myConsoleProject.cs
             //Console.WriteLine("hi " + 5);
             //Console.Read();
 
-            double input = Convert.ToDouble(Console.ReadLine());
-            double result = input * 50;
-            Console.WriteLine(result);
 
-            input = Convert.ToDouble(Console.ReadLine());
-            result = input + 25;
-            Console.WriteLine(result);
+            //double input = Convert.ToDouble(Console.ReadLine());
+            //double result = input * 50;
+            //Console.WriteLine(result);
 
-            input = Convert.ToDouble(Console.ReadLine());
-            result = input / 12.5;
-            Console.WriteLine(result);
+            //input = Convert.ToDouble(Console.ReadLine());
+            //result = input + 25;
+            //Console.WriteLine(result);
 
-            input = Convert.ToDouble(Console.ReadLine());
-            bool resultBool = input > 50;
-            Console.WriteLine(resultBool);
+            //input = Convert.ToDouble(Console.ReadLine());
+            //result = input / 12.5;
+            //Console.WriteLine(result);
 
-            input = Convert.ToDouble(Console.ReadLine());
-            result = input % 7;
-            Console.WriteLine(result);
+            //input = Convert.ToDouble(Console.ReadLine());
+            //bool resultBool = input > 50;
+            //Console.WriteLine(resultBool);
 
+            //input = Convert.ToDouble(Console.ReadLine());
+            //result = input % 7;
+            //Console.WriteLine(result);
+
+            //Console.Read();
+
+
+            Console.WriteLine("Anonymous Income Comparison Program");
+            Console.WriteLine("Person 1\nHourly Rate?");
+            double rate1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Hours worked per week?");
+            double hours1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Person 2\nHourly Rate?");
+            double rate2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Hours worked per week?");
+            double hours2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Annual salary of Person 1:");
+            double result1 = rate1 * hours1 * 52;
+            Console.WriteLine(result1);
+            Console.WriteLine("Annual salary of Person 2:");
+            double result2 = rate2 * hours2 * 52;
+            Console.WriteLine(result2);
+            Console.WriteLine("Does Person 1 make more money than Person 2?");
+            bool compare = result1 > result2;
+            Console.WriteLine(compare);
             Console.Read();
         }
     }
