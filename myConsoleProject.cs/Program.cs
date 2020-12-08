@@ -89,26 +89,58 @@ namespace myConsoleProject.cs
             //Console.WriteLine(result);
 
 
-            Console.WriteLine("Welcome to Package Express. Please follow the instructions below.");
-            Console.WriteLine("Please enter the package weight:");
-            double weight = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Please enter the package width:");
-            double width = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Please enter the package height:");
-            double height = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Please enter the package length:");
-            double length = Convert.ToDouble(Console.ReadLine());
-            double size = width + height + length;
-            if (size > 50)
+            //Console.WriteLine("Welcome to Package Express. Please follow the instructions below.");
+            //Console.WriteLine("Please enter the package weight:");
+            //double weight = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Please enter the package width:");
+            //double width = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Please enter the package height:");
+            //double height = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Please enter the package length:");
+            //double length = Convert.ToDouble(Console.ReadLine());
+            //double size = width + height + length;
+            //if (size > 50)
+            //{
+            //    Console.WriteLine("Package too big to be shipped via Package Express.");
+            //}
+            //else
+            //{
+            //    double total = (height * width * length * weight) / 100;
+            //    Console.WriteLine("Your estimated total for shipping this package is: $" + total.ToString("F"));
+            //    Console.WriteLine("Thank you!");
+            //}
+            //Console.Read();
+
+            int i = 0;
+            bool go = true;
+            while (go)
             {
-                Console.WriteLine("Package too big to be shipped via Package Express.");
+                i++;
+                if (i < 10)
+                {
+                    Console.WriteLine(i);
+                }
+                else
+                {
+                    go = false;
+                }
             }
-            else
+            Console.WriteLine("--");
+            i = 0;
+            go = true;
+            do
             {
-                double total = (height * width * length * weight) / 100;
-                Console.WriteLine("Your estimated total for shipping this package is: $" + total.ToString("F"));
-                Console.WriteLine("Thank you!");
+                i++;
+                if (i < 10)
+                {
+                    Console.WriteLine(i);
+                }
+                else
+                {
+                    go = false;
+                }
             }
+            while (go);
             Console.Read();
         }
     }
