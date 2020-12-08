@@ -74,15 +74,41 @@ namespace myConsoleProject.cs
             //Console.Read();
 
 
-            Console.WriteLine("What is your age?");
-            int age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Have you ever had a DUI?");
-            bool DUI = Convert.ToBoolean(Console.ReadLine());
-            Console.WriteLine("How many speeding tickets do you have?");
-            int tickets = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Qualified?");
-            bool qualified = age > 15 && DUI == false && tickets <= 3;
-            Console.WriteLine(qualified);
+            //Console.WriteLine("What is your age?");
+            //int age = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Have you ever had a DUI?");
+            //bool DUI = Convert.ToBoolean(Console.ReadLine());
+            //Console.WriteLine("How many speeding tickets do you have?");
+            //int tickets = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Qualified?");
+            //bool qualified = age > 15 && DUI == false && tickets <= 3;
+            //Console.WriteLine(qualified);
+            //Console.Read();
+
+            //string result = 2 > 1 ? "test1" : "test2";
+            //Console.WriteLine(result);
+
+
+            Console.WriteLine("Welcome to Package Express. Please follow the instructions below.");
+            Console.WriteLine("Please enter the package weight:");
+            double weight = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Please enter the package width:");
+            double width = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Please enter the package height:");
+            double height = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Please enter the package length:");
+            double length = Convert.ToDouble(Console.ReadLine());
+            double size = width + height + length;
+            if (size > 50)
+            {
+                Console.WriteLine("Package too big to be shipped via Package Express.");
+            }
+            else
+            {
+                double total = (height * width * length * weight) / 100;
+                Console.WriteLine("Your estimated total for shipping this package is: $" + total.ToString("F"));
+                Console.WriteLine("Thank you!");
+            }
             Console.Read();
         }
     }
