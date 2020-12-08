@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace myConsoleProject.cs
@@ -145,18 +146,76 @@ namespace myConsoleProject.cs
             //Console.Read();
 
 
-            Console.WriteLine("string 1 " + "string 2 " + "string 3");
-            string line = "this is a string";
-            Console.WriteLine(line.ToUpper());
+            //Console.WriteLine("string 1 " + "string 2 " + "string 3");
+            //string line = "this is a string";
+            //Console.WriteLine(line.ToUpper());
 
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Lorem ipsum dolor sit amet, libris populo sea ne, sit illum discere cu, cum no menandri sapientem. ");
-            sb.Append("Ex veritus tibique has, te eum adhuc vulputate. ");
-            sb.Append("Eam an facer persius appareat, id idque dolor fastidii nec. ");
-            sb.Append("Suas consul tamquam usu in, quo id offendit suscipiantur. ");
-            sb.Append("Magna constituto an his, mel sint omnium te. ");
-            sb.Append("Qui quod paulo in, mel ex elit everti definitionem, et quis adhuc numquam vis.");
-            Console.WriteLine(sb);
+            //StringBuilder sb = new StringBuilder();
+            //sb.Append("Lorem ipsum dolor sit amet, libris populo sea ne, sit illum discere cu, cum no menandri sapientem. ");
+            //sb.Append("Ex veritus tibique has, te eum adhuc vulputate. ");
+            //sb.Append("Eam an facer persius appareat, id idque dolor fastidii nec. ");
+            //sb.Append("Suas consul tamquam usu in, quo id offendit suscipiantur. ");
+            //sb.Append("Magna constituto an his, mel sint omnium te. ");
+            //sb.Append("Qui quod paulo in, mel ex elit everti definitionem, et quis adhuc numquam vis.");
+            //Console.WriteLine(sb);
+            //Console.Read();
+
+
+            //int[] numbers1 = new int[5];
+            //numbers1[0] = 10;
+            //numbers1[1] = 100;
+            //numbers1[2] = 1000;
+            //numbers1[3] = 10000;
+            //numbers1[4] = 100000;
+
+            //int[] numbers2 = new int[] {10, 100, 1000, 10000, 100000};
+
+
+            string[] PhoneticAlphabet = {"Alfa", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliett"};
+            Console.WriteLine("Select an index of the array (0-9)");
+            int index = Convert.ToInt32(Console.ReadLine());
+            if (index > 9 || index < 0)
+            {
+                Console.WriteLine("That index does not exist");
+            }
+            else
+            {
+                Console.WriteLine(PhoneticAlphabet[index]);
+            }
+
+            int[] numbers = {10, 100, 1000, 10000, 100000};
+            Console.WriteLine("Select an index of the array (0-4)");
+            index = Convert.ToInt32(Console.ReadLine());
+            if (index > 4 || index < 0)
+            {
+                Console.WriteLine("That index does not exist");
+            }
+            else
+            {
+                Console.WriteLine(numbers[index]);
+            }
+
+            List<string> list = new List<string>();
+            list.Add("Alfa");
+            list.Add("Bravo");
+            list.Add("Charlie");
+            list.Add("Delta");
+            list.Add("Echo");
+            list.Add("Foxtrot");
+            list.Add("Golf");
+            list.Add("Hotel");
+            list.Add("India");
+            list.Add("Juliett");
+            Console.WriteLine("Select an index of the array (0-9)");
+            index = Convert.ToInt32(Console.ReadLine());
+            if (index > 9 || index < 0)
+            {
+                Console.WriteLine("That index does not exist");
+            }
+            else
+            {
+                Console.WriteLine(list[index]);
+            }
             Console.Read();
         }
     }
