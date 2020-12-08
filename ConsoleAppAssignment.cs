@@ -13,7 +13,7 @@ class Assignment
             {
                 Console.WriteLine(i);
             }
-            else
+            else if (i == 10)
             {
                 go = false;
             }
@@ -28,7 +28,7 @@ class Assignment
             {
                 Console.WriteLine(i);
             }
-            else
+            else if (i == 10)
             {
                 go = false;
             }

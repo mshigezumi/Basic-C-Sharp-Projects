@@ -120,7 +120,7 @@ namespace myConsoleProject.cs
                 {
                     Console.WriteLine(i);
                 }
-                else
+                else if (i == 10)
                 {
                     go = false;
                 }
@@ -135,7 +135,7 @@ namespace myConsoleProject.cs
                 {
                     Console.WriteLine(i);
                 }
-                else
+                else if (i == 10)
                 {
                     go = false;
                 }
