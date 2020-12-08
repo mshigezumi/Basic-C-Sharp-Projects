@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace myConsoleProject.cs
 {
@@ -111,36 +112,51 @@ namespace myConsoleProject.cs
             //}
             //Console.Read();
 
-            int i = 0;
-            bool go = true;
-            while (go)
-            {
-                i++;
-                if (i < 10)
-                {
-                    Console.WriteLine(i);
-                }
-                else if (i == 10)
-                {
-                    go = false;
-                }
-            }
-            Console.WriteLine("--");
-            i = 0;
-            go = true;
-            do
-            {
-                i++;
-                if (i < 10)
-                {
-                    Console.WriteLine(i);
-                }
-                else if (i == 10)
-                {
-                    go = false;
-                }
-            }
-            while (go);
+            //int i = 0;
+            //bool go = true;
+            //while (go)
+            //{
+            //    i++;
+            //    if (i < 10)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //    else if (i == 10)
+            //    {
+            //        go = false;
+            //    }
+            //}
+            //Console.WriteLine("--");
+            //i = 0;
+            //go = true;
+            //do
+            //{
+            //    i++;
+            //    if (i < 10)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //    else if (i == 10)
+            //    {
+            //        go = false;
+            //    }
+            //}
+            //while (go);
+            //Console.Read();
+
+
+            Console.WriteLine("string 1 " + "string 2 " + "string 3");
+            string line = "this is a string";
+            Console.WriteLine(line.ToUpper());
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Lorem ipsum dolor sit amet, libris populo sea ne, sit illum discere cu, cum no menandri sapientem. ");
+            sb.Append("Ex veritus tibique has, te eum adhuc vulputate. ");
+            sb.Append("Eam an facer persius appareat, id idque dolor fastidii nec. ");
+            sb.Append("Suas consul tamquam usu in, quo id offendit suscipiantur. ");
+            sb.Append("Magna constituto an his, mel sint omnium te. ");
+            sb.Append("Qui quod paulo in, mel ex elit everti definitionem, et quis adhuc numquam vis.");
+            Console.WriteLine(sb);
             Console.Read();
         }
     }
