@@ -171,51 +171,179 @@ namespace myConsoleProject.cs
             //int[] numbers2 = new int[] {10, 100, 1000, 10000, 100000};
 
 
+            //string[] PhoneticAlphabet = {"Alfa", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliett"};
+            //Console.WriteLine("Select an index of the array (0-9)");
+            //int index = Convert.ToInt32(Console.ReadLine());
+            //if (index > 9 || index < 0)
+            //{
+            //    Console.WriteLine("That index does not exist");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(PhoneticAlphabet[index]);
+            //}
+
+            //int[] numbers = {10, 100, 1000, 10000, 100000};
+            //Console.WriteLine("Select an index of the array (0-4)");
+            //index = Convert.ToInt32(Console.ReadLine());
+            //if (index > 4 || index < 0)
+            //{
+            //    Console.WriteLine("That index does not exist");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(numbers[index]);
+            //}
+
+            //List<string> list = new List<string>();
+            //list.Add("Alfa");
+            //list.Add("Bravo");
+            //list.Add("Charlie");
+            //list.Add("Delta");
+            //list.Add("Echo");
+            //list.Add("Foxtrot");
+            //list.Add("Golf");
+            //list.Add("Hotel");
+            //list.Add("India");
+            //list.Add("Juliett");
+            //Console.WriteLine("Select an index of the array (0-9)");
+            //index = Convert.ToInt32(Console.ReadLine());
+            //if (index > 9 || index < 0)
+            //{
+            //    Console.WriteLine("That index does not exist");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(list[index]);
+            //}
+            //Console.Read();
+
+            
             string[] PhoneticAlphabet = {"Alfa", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliett"};
-            Console.WriteLine("Select an index of the array (0-9)");
-            int index = Convert.ToInt32(Console.ReadLine());
-            if (index > 9 || index < 0)
+            Console.WriteLine("Input text to be added to each string");
+            string add = Console.ReadLine();
+            int i = 0;
+            foreach (string letter in PhoneticAlphabet)
             {
-                Console.WriteLine("That index does not exist");
+                PhoneticAlphabet[i] = letter + add;
+                i++;
             }
-            else
+            foreach (string letter in PhoneticAlphabet)
             {
-                Console.WriteLine(PhoneticAlphabet[index]);
-            }
-
-            int[] numbers = {10, 100, 1000, 10000, 100000};
-            Console.WriteLine("Select an index of the array (0-4)");
-            index = Convert.ToInt32(Console.ReadLine());
-            if (index > 4 || index < 0)
-            {
-                Console.WriteLine("That index does not exist");
-            }
-            else
-            {
-                Console.WriteLine(numbers[index]);
+                Console.WriteLine(letter);
             }
 
-            List<string> list = new List<string>();
-            list.Add("Alfa");
-            list.Add("Bravo");
-            list.Add("Charlie");
-            list.Add("Delta");
-            list.Add("Echo");
-            list.Add("Foxtrot");
-            list.Add("Golf");
-            list.Add("Hotel");
-            list.Add("India");
-            list.Add("Juliett");
-            Console.WriteLine("Select an index of the array (0-9)");
-            index = Convert.ToInt32(Console.ReadLine());
-            if (index > 9 || index < 0)
+            Console.WriteLine("--");
+
+            bool go = true;
+            //while (go)
+            //{
+            //    Console.WriteLine("This will never end.");
+            //}
+
+            i = 0;
+            do
             {
-                Console.WriteLine("That index does not exist");
-            }
-            else
+                Console.WriteLine("This will end.");
+                i++;
+                if (i > 9) { go = false; }
+            } while (go);
+
+            Console.WriteLine("--");
+
+            for (i = 0; i < 10; i++)
             {
-                Console.WriteLine(list[index]);
+                Console.WriteLine(i);
             }
+
+            Console.WriteLine("--");
+
+            for (i = 0; i <= 9; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine("--");
+
+            List<string> listPA = new List<string>();
+            listPA.Add("Alfa");
+            listPA.Add("Bravo");
+            listPA.Add("Charlie");
+            listPA.Add("Delta");
+            listPA.Add("Echo");
+            listPA.Add("Foxtrot");
+            listPA.Add("Golf");
+            listPA.Add("Hotel");
+            listPA.Add("India");
+            listPA.Add("Juliett");
+            Console.WriteLine("Input text to be searched for in the list");
+            string search = Console.ReadLine();
+
+            go = true;
+            i = 0;
+            bool found = false;
+            do
+            {
+                if (listPA[i].Contains(search))
+                {
+                    Console.WriteLine("Index " + i + " contains input text");
+                    found = true;
+                    go = false;
+                }
+                i++;
+                if (found == false && i == listPA.Count)
+                {
+                    Console.WriteLine("Input is not on the list");
+                    go = false;
+                }
+            } while (go);
+
+            Console.WriteLine("--");
+
+            listPA.Add("Alfa");
+            Console.WriteLine("Input text to be searched for in the list");
+            search = Console.ReadLine();
+
+            go = true;
+            i = 0;
+            found = false;
+            do
+            {
+                if (listPA[i].Contains(search))
+                {
+                    Console.WriteLine("Index " + i + " contains input text");
+                    found = true;
+                }
+                i++;
+                if (i == listPA.Count)
+                {
+                    if (found == false)
+                    {
+                        Console.WriteLine("Input is not on the list");
+                    }
+                    go = false;
+                }
+            } while (go);
+
+            Console.WriteLine("--");
+
+            listPA.Add("Bravo");
+            listPA.Add("Charlie");
+            listPA.Add("Zulu");
+            List<string> appeared = new List<string>();
+            foreach (string item in listPA)
+            {
+                if (appeared.Contains(item))
+                {
+                    Console.WriteLine(item + " has already appeared in the list");
+                }
+                else
+                {
+                    Console.WriteLine(item + " has not already appeared in the list");
+                    appeared.Add(item);
+                }
+            }
+
             Console.Read();
         }
     }
