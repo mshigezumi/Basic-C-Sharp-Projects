@@ -18,5 +18,15 @@ class MathOperations
         {
             return 10 * x;
         }
+
+        public int Add(decimal x)
+        {
+            return Convert.ToInt32(20 + x);
+        }
+
+        public int Add(string x)
+        {
+            return 30 + Convert.ToInt32(x);
+        }
     }
 }
