@@ -346,34 +346,41 @@ namespace myConsoleProject.cs
 
             //Console.Read();
 
-            try
-            {
-                List<int> list = new List<int>();
-                list.Add(10);
-                list.Add(20);
-                list.Add(30);
-                list.Add(40);
-                list.Add(50);
-                list.Add(60);
-                list.Add(70);
-                list.Add(80);
-                list.Add(90);
-                list.Add(100);
-                Console.WriteLine("Input a number to divide by");
-                int number = Convert.ToInt32(Console.ReadLine());
-                for (int i = 0; i < list.Count; i++)
-                {
-                    Console.WriteLine(list[i] / number);
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            Console.WriteLine("Program has emerged from try/catch block");
-            Console.Read();
-            
+            //try
+            //{
+            //    List<int> list = new List<int>();
+            //    list.Add(10);
+            //    list.Add(20);
+            //    list.Add(30);
+            //    list.Add(40);
+            //    list.Add(50);
+            //    list.Add(60);
+            //    list.Add(70);
+            //    list.Add(80);
+            //    list.Add(90);
+            //    list.Add(100);
+            //    Console.WriteLine("Input a number to divide by");
+            //    int number = Convert.ToInt32(Console.ReadLine());
+            //    for (int i = 0; i < list.Count; i++)
+            //    {
+            //        Console.WriteLine(list[i] / number);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            //Console.WriteLine("Program has emerged from try/catch block");
+            //Console.Read();
 
+
+            Console.WriteLine("Input a number");
+            int number = Convert.ToInt32(Console.ReadLine());
+            MathOperations math = new MathOperations();
+            Console.WriteLine(math.Add(number));
+            Console.WriteLine(math.Subtract(number));
+            Console.WriteLine(math.Multiply(number));
+            Console.Read();
         }
     }
 }
