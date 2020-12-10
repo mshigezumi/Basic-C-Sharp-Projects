@@ -383,13 +383,27 @@ namespace myConsoleProject.cs
             //Console.Read();
 
 
-            int number = 5;
-            decimal number2 = (decimal)5.5;
-            string number3 = "5";
+            //int number = 5;
+            //decimal number2 = (decimal)5.5;
+            //string number3 = "5";
+            //MathOperations math = new MathOperations();
+            //Console.WriteLine(math.Add(number));
+            //Console.WriteLine(math.Add(number2));
+            //Console.WriteLine(math.Add(number3));
+            //Console.Read();
+
+
+            Console.WriteLine("Input a number");
+            int number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input a second number (optional)");
+            string input = Console.ReadLine();
+            int number2 = 0;
+            if (input != "")
+            {
+                number2 = Convert.ToInt32(input);
+            }
             MathOperations math = new MathOperations();
-            Console.WriteLine(math.Add(number));
-            Console.WriteLine(math.Add(number2));
-            Console.WriteLine(math.Add(number3));
+            Console.WriteLine(math.Add(number, number2));
             Console.Read();
         }
     }

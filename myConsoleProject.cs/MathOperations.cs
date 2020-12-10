@@ -32,5 +32,10 @@ namespace myConsoleProject.cs
         {
             return 30 + Convert.ToInt32(x);
         }
+
+        public int Add(int x, int y = 0)
+        {
+            return x + y;
+        }
     }
 }
