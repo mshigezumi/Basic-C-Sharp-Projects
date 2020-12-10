@@ -1,0 +1,1 @@
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\ConsoleAppAssignment2\obj\Debug\ConsoleAppAssignment2.csproj.CoreCompileInputs.cache
