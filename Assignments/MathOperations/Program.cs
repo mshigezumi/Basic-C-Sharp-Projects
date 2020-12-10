@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace myConsoleProject.cs
+namespace MathOperations
 {
     public class MathOperations
     {
@@ -36,12 +36,6 @@ namespace myConsoleProject.cs
         public int Add(int x, int y = 0)
         {
             return x + y;
-        }
-
-        public void Show(int x, int y)
-        {
-            x = x + 10;
-            Console.WriteLine(y);//I don't know if this is what it's asking for
         }
     }
 }

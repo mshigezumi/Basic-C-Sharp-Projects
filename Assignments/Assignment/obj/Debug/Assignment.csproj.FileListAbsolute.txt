@@ -1,0 +1,7 @@
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment\bin\Debug\Assignment.exe.config
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment\bin\Debug\Assignment.exe
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment\bin\Debug\Assignment.pdb
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment\obj\Debug\Assignment.csprojAssemblyReference.cache
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment\obj\Debug\Assignment.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment\obj\Debug\Assignment.exe
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment\obj\Debug\Assignment.pdb

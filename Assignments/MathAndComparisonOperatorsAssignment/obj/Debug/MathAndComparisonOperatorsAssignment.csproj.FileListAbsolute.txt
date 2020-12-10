@@ -1,0 +1,6 @@
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\MathAndComparisonOperatorsAssignment\bin\Debug\MathAndComparisonOperatorsAssignment.exe.config
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\MathAndComparisonOperatorsAssignment\bin\Debug\MathAndComparisonOperatorsAssignment.exe
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\MathAndComparisonOperatorsAssignment\bin\Debug\MathAndComparisonOperatorsAssignment.pdb
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\MathAndComparisonOperatorsAssignment\obj\Debug\MathAndComparisonOperatorsAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\MathAndComparisonOperatorsAssignment\obj\Debug\MathAndComparisonOperatorsAssignment.exe
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\MathAndComparisonOperatorsAssignment\obj\Debug\MathAndComparisonOperatorsAssignment.pdb

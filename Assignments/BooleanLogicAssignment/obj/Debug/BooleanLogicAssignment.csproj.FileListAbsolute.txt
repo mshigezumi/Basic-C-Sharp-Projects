@@ -1,0 +1,6 @@
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\BooleanLogicAssignment\bin\Debug\BooleanLogicAssignment.exe.config
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\BooleanLogicAssignment\bin\Debug\BooleanLogicAssignment.exe
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\BooleanLogicAssignment\bin\Debug\BooleanLogicAssignment.pdb
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\BooleanLogicAssignment\obj\Debug\BooleanLogicAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\BooleanLogicAssignment\obj\Debug\BooleanLogicAssignment.exe
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\BooleanLogicAssignment\obj\Debug\BooleanLogicAssignment.pdb
