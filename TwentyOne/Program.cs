@@ -11,8 +11,7 @@ namespace TwentyOne
         static void Main(string[] args)
         {
             Deck deck = new Deck();
-            int timesShuffled = 0;
-            deck = Shuffle(deck, out timesShuffled, 3);
+            deck.Shuffle(3);
 
             foreach (Card card in deck.Cards)
             {
@@ -20,7 +19,6 @@ namespace TwentyOne
             }
 
             Console.WriteLine(deck.Cards.Count);
-            Console.WriteLine("Times shuffled: {0}", timesShuffled);
             Console.ReadLine();
         }
     }
