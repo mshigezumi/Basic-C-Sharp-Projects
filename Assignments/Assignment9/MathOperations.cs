@@ -8,8 +8,8 @@ namespace Assignment9
 {
     class MathOperations
     {
-        public static int result1;
-        public static int result2;
+        public int result1;
+        public int result2;
         public void Add(int x, int y)
         {
             x += 10;

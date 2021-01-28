@@ -22,8 +22,8 @@ namespace Assignment9
             MathOperations math = new MathOperations();
             math.Add(number, number2);
             Console.WriteLine("--");
-            Console.WriteLine(MathOperations.result1);
-            Console.WriteLine(MathOperations.result2);
+            Console.WriteLine(math.result1);
+            Console.WriteLine(math.result2);
             Console.Read();
         }
     }
