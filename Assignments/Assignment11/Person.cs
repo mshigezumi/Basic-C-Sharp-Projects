@@ -15,6 +15,5 @@ namespace Assignment11
         {
             Console.Write("Name: " + FirstName + " " + LastName);
         }
-
     }
 }
