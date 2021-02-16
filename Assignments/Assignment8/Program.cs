@@ -14,7 +14,7 @@ namespace Assignment8
             int number = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Input a second number (optional)");
             string input = Console.ReadLine();
-            int number2 = 0;
+            int number2 = 10;
             if (input != "")
             {
                 number2 = Convert.ToInt32(input);
