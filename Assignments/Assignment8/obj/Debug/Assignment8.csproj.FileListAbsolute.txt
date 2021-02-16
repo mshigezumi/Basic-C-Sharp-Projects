@@ -4,3 +4,4 @@ C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment8
 C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment8\obj\Debug\Assignment8.csproj.CoreCompileInputs.cache
 C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment8\obj\Debug\Assignment8.exe
 C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment8\obj\Debug\Assignment8.pdb
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment8\obj\Debug\Assignment8.csprojAssemblyReference.cache

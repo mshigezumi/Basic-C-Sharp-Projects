@@ -21,7 +21,6 @@ namespace Assignment8
             }
             MathOperations math = new MathOperations();
             Console.WriteLine(math.Add(number, number2));
-            Console.WriteLine(math.Add(number)); //shows that the method works even without a second input
             Console.Read();
         }
     }
