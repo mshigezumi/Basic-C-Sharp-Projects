@@ -17,6 +17,10 @@ namespace TwentyOne
             Console.ReadLine();
             */
 
+            TwentyOneGame game = new TwentyOneGame();
+            game.Players = new List<string>() { "Jesse", "Bill", "Bob" };
+            game.ListPlayers();
+
             Deck deck = new Deck();
             deck.Shuffle(3);
 
