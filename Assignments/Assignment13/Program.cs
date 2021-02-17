@@ -10,11 +10,6 @@ namespace Assignment13
     {
         static void Main(string[] args)
         {
-            Employee emp = new Employee();
-            emp.firstName = "Sample";
-            emp.lastName = "Student";
-            emp.SayName();
-
             IQuittable quit = new Employee();
             quit.Quit();
             Console.Read();
