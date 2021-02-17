@@ -1,0 +1,7 @@
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment13\bin\Debug\Assignment13.exe.config
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment13\bin\Debug\Assignment13.exe
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment13\bin\Debug\Assignment13.pdb
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment13\obj\Debug\Assignment13.csprojAssemblyReference.cache
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment13\obj\Debug\Assignment13.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment13\obj\Debug\Assignment13.exe
+C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\Assignments\Assignment13\obj\Debug\Assignment13.pdb
