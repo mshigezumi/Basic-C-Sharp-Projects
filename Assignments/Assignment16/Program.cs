@@ -10,7 +10,19 @@ namespace Assignment16
     {
         static void Main(string[] args)
         {
+            Number num = new Number(10.0m);
+            Console.WriteLine(num.Amount);
+            Console.Read();
+        }
 
+        public struct Number
+        {
+            public decimal Amount;
+
+            public Number(decimal amount)
+            {
+                Amount = amount;
+            }
         }
     }
 }
