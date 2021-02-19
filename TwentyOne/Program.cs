@@ -24,6 +24,8 @@ namespace TwentyOne
             game += player;
             game -= player;
 
+
+            DaysOfTheWeek day = DaysOfTheWeek.Monday;
             Deck deck = new Deck();
             deck.Shuffle(3);
 
@@ -34,6 +36,17 @@ namespace TwentyOne
 
             Console.WriteLine(deck.Cards.Count);
             Console.ReadLine();
+        }
+
+        public enum DaysOfTheWeek
+        {
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
         }
     }
 }
