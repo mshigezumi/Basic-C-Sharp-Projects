@@ -18,12 +18,11 @@ namespace TwentyOne
             Hand.Add(Deck.Cards.First());
             string card = string.Format(Deck.Cards.First().ToString() + "\n");
             Console.WriteLine(card);
-            /* 
             using (StreamWriter file = new StreamWriter(@"C:\Users\Michael\Documents\GitHub\Basic-C-Sharp-Projects\TwentyOne\logs\log.txt", true))
             {
+                file.WriteLine(DateTime.Now);
                 file.WriteLine(card);
-            } // throwing a System.UnauthorizedAccessException: 'Access to the path is denied.'
-            */
+            }
             Deck.Cards.RemoveAt(0);
         }
     }
