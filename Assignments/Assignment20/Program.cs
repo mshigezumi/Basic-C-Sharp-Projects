@@ -27,6 +27,5 @@ namespace Assignment20
             this.name = name;
             this.number = number;
         }
-        //assignment on page 310
     }
 }
