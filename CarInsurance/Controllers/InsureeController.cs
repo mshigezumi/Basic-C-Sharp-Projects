@@ -20,6 +20,11 @@ namespace CarInsurance.Controllers
             return View(db.Insurees.ToList());
         }
 
+        public ActionResult Admin()
+        {
+            return View(db.Insurees.ToList());
+        }
+
         // GET: Insuree/Details/5
         public ActionResult Details(int? id)
         {
@@ -41,14 +46,48 @@ namespace CarInsurance.Controllers
             return View();
         }
 
+        public static int GetAge(DateTime birthDate)
+        {
+            DateTime now = DateTime.Now;
+            int age = now.Year - birthDate.Year;
+
+            if (now.Month < birthDate.Month || (now.Month == birthDate.Month && now.Day < birthDate.Day))
+                age--;
+
+            return age;
+        }
+
+        public static void CalculateQuote(Insuree insuree)
+        {
+            decimal quote = 50M;
+
+            if (GetAge(insuree.DateOfBirth) <= 18) quote += 100M;
+            else if (GetAge(insuree.DateOfBirth) >= 19 && GetAge(insuree.DateOfBirth) <= 25) quote += 50M;
+            else quote += 25M;
+
+            if (insuree.CarYear <= 2000) quote += 25M;
+            else if (insuree.CarYear >= 2015) quote += 25M;
+
+            if (insuree.CarMake.ToLower() == "porsche") quote += 25M;
+            if (insuree.CarMake.ToLower() == "porsche" && insuree.CarModel.ToLower() == "911 carrera") quote += 25M; // need to add model for assignement?
+
+            quote += 10M * insuree.SpeedingTickets;
+
+            if (insuree.DUI) quote *= 1.25M;
+
+            if (insuree.CoverageType) quote *= 1.5M;
+
+            insuree.Quote = quote;
+        }
+
         // POST: Insuree/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
         {
-            //add logic for quote here?
+            CalculateQuote(insuree);
             if (ModelState.IsValid)
             {
                 db.Insurees.Add(insuree);
@@ -79,8 +118,9 @@ namespace CarInsurance.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
+        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
         {
+            CalculateQuote(insuree);
             if (ModelState.IsValid)
             {
                 db.Entry(insuree).State = EntityState.Modified;
