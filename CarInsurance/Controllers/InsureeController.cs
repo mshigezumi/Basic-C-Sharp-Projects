@@ -75,7 +75,7 @@ namespace CarInsurance.Controllers
 
             if (insuree.DUI) quote *= 1.25M;
 
-            if (insuree.CoverageType) quote *= 1.5M;
+            if (insuree.CoverageType) quote *= 1.5M; //change this to add to a DUI multipier then multiply the base price if that's how the system is suppose to work
 
             insuree.Quote = quote;
         }
