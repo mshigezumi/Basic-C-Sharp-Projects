@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "3xN0F2rG5QsjA/qKN6OEbz0ku9b+qXBsQFdjqxMBxC1+BMK1G/MwGvOWce6hVnjhlVgk+9Eclq8bhD7ck4xhSA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Michael\\Documents\\GitHub\\Basic-C-Sharp-Projects\\helloworld\\helloworld.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Michael\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.3\\microsoft.netcore.app.runtime.win-x64.5.0.3.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.3\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.3.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.3\\microsoft.aspnetcore.app.runtime.win-x64.5.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
