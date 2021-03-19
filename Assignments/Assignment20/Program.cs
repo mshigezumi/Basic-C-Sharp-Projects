@@ -10,8 +10,11 @@ namespace Assignment20
     {
         static void Main(string[] args)
         {
-            Thing thing1 = new Thing("test1");
-            Thing thing2 = new Thing("test2", 1);
+            const string constant = "this is a constant";
+            var i = 2;
+
+            Thing thing1 = new Thing("thing1");
+            Thing thing2 = new Thing("thing2", 1);
 
             Console.WriteLine(thing1.name);
             Console.WriteLine(thing1.number);
