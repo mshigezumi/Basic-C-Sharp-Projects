@@ -13,6 +13,12 @@ namespace BranchingAssignment
             Console.WriteLine("Welcome to Package Express. Please follow the instructions below.");
             Console.WriteLine("Please enter the package weight:");
             double weight = Convert.ToDouble(Console.ReadLine());
+            if (weight > 50)
+            {
+                Console.WriteLine("Package too heavy to be shipped via Package Express.");
+                Console.Read();
+                return;
+            }
             Console.WriteLine("Please enter the package width:");
             double width = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Please enter the package height:");

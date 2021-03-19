@@ -14,13 +14,16 @@ namespace Assignment8
             int number = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Input a second number (optional)");
             string input = Console.ReadLine();
-            int number2 = 10;
+            MathOperations math = new MathOperations();
             if (input != "")
             {
-                number2 = Convert.ToInt32(input);
+                int number2 = Convert.ToInt32(input);
+                Console.WriteLine(math.Add(number, number2));
             }
-            MathOperations math = new MathOperations();
-            Console.WriteLine(math.Add(number, number2));
+            else
+            {
+                Console.WriteLine(math.Add(number));
+            }
             Console.Read();
         }
     }

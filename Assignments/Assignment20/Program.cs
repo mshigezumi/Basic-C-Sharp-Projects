@@ -10,22 +10,14 @@ namespace Assignment20
     {
         static void Main(string[] args)
         {
-            const string test = "this is a test";
-            var test2 = 2;
-        }
+            Thing thing1 = new Thing("test1");
+            Thing thing2 = new Thing("test2", 1);
 
-        public string name;
-        public int number;
-
-        public Program(string name)
-        {
-            this.name = name;
-        }
-
-        public Program(string name, int number) : this(name)
-        {
-            this.name = name;
-            this.number = number;
+            Console.WriteLine(thing1.name);
+            Console.WriteLine(thing1.number);
+            Console.WriteLine(thing2.name);
+            Console.WriteLine(thing2.number);
+            Console.Read();
         }
     }
 }
